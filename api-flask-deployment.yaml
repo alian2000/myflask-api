@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: api-deploy
+  name: api-deploy
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: api-deploy
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: api-deploy
+    spec:
+      containers:
+      - image: alian2020/flaskapicont15
+        name: flaskapicont15
+        resources: {}
+status: {}
