@@ -1,6 +1,9 @@
 from flask import Flask
 from flask_restful import Resource, Api, reqparse
 #https://www.blog.duomly.com/python-api-tutorial/
+# __name__ is a special variable in Python which takes the value of the script name.
+#This line ensures that our Flask app runs only when it is executed in the
+#main file and not when it is imported into some other file
 
 app = Flask(__name__)
 api = Api(app)
